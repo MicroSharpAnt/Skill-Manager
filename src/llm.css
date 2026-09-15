@@ -1,0 +1,55 @@
+.llm-settings { display: grid; gap: 12px; }
+.llm-settings > p { margin: 0 0 4px; line-height: 1.65; color: var(--muted); }
+.llm-settings label { display: grid; gap: 7px; font-size: 13px; }
+.llm-settings input:not([type="checkbox"]), .llm-settings select { width: 100%; box-sizing: border-box; padding: 10px 12px; border: 1px solid var(--line); border-radius: 7px; background: var(--surface); color: var(--text); }
+.llm-settings .llm-inline { display: flex; align-items: center; }
+.llm-settings small, .reader-hint { color: var(--muted); font-size: 11px; line-height: 1.6; }
+.llm-settings footer, .reader-confirm { display: flex; justify-content: flex-end; gap: 10px; margin-top: 14px; }
+.resource-reader { min-width: 0; }
+.reader-toolbar { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); padding: 0 16px; }
+.reader-tabs { display: flex; flex-wrap: wrap; gap: 0 16px; }
+.reader-tabs button { padding: 12px 0; color: var(--muted); border-bottom: 2px solid transparent; }
+.reader-tabs button.active { color: var(--accent); border-bottom-color: currentColor; }
+.reader-settings { padding: 8px; }
+.reader-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; padding: 12px 16px 0; }
+.reader-actions button { display: inline-flex; align-items: center; gap: 5px; }
+.reader-actions select { max-width: 140px; padding: 6px 8px; }
+.reader-hint { margin: 8px 16px 12px; }
+.reader-empty { padding: 28px 18px; color: var(--muted); font-size: 13px; line-height: 1.8; }
+.reader-status, .reader-backup { margin: 12px 16px; font-size: 12px; line-height: 1.7; }
+.reader-status button, .reader-backup button { margin-left: 10px; text-decoration: underline; }
+.reader-backup code { display: block; overflow-wrap: anywhere; font-size: 10px; color: var(--muted); }
+.llm-error { color: #bd3e46 !important; overflow-wrap: anywhere; line-height: 1.6; font-size: 13px; }
+.resource-reader > .llm-error { margin: 12px 16px; }
+.llm-config-link { margin-left: 10px; color: var(--accent); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.translation-editor { display: block; box-sizing: border-box; width: calc(100% - 32px); min-height: 380px; margin: 16px; padding: 12px; resize: vertical; background: var(--surface); color: var(--text); border: 1px solid var(--line); border-radius: 8px; font-family: monospace; line-height: 1.6; }
+.translation-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; max-height: 55vh; overflow: auto; }
+.translation-compare > section { min-width: 0; border: 1px solid var(--line); border-radius: 8px; }
+.translation-compare h3 { margin: 0; padding: 10px 14px; border-bottom: 1px solid var(--line); font-size: 13px; }
+.translation-compare .markdown-preview { padding: 12px; }
+.detail-panel > .resource-reader { flex: 1; min-height: 0; overflow: auto; }
+.detail-panel > .resource-reader > .markdown-preview { max-height: none; overflow: visible; border: 0; border-radius: 0; }
+.detail-panel > header { flex-shrink: 0; }
+.detail-panel > .detail-meta { flex-shrink: 0; max-height: 35vh; overflow: auto; }
+.translation-style-settings { margin: 0 0 22px; padding: 14px; border: 1px solid var(--line); border-radius: 8px; }
+.translation-style-settings legend { padding: 0 6px; font-weight: 600; font-size: 13px; }
+.translation-style-settings label { display: flex; align-items: flex-start; gap: 9px; padding: 8px 0; cursor: pointer; }
+.translation-style-settings strong { display: block; font-size: 12px; }
+.translation-style-settings small { display: block; color: var(--muted); font-size: 11px; line-height: 1.65; margin-top: 3px; }
+.translation-columns { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px; padding: 16px; max-height: 65vh; overflow: auto; }
+.translation-columns > section { min-width: 0; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); }
+.translation-columns h3 { position: sticky; top: 0; z-index: 1; background: var(--paper); margin: 0; padding: 10px 14px; border-bottom: 1px solid var(--line); font-size: 12px; }
+.translation-columns .markdown-preview { max-height: none; overflow: visible; border: none; padding: 14px; }
+.sentence-pair, .sentence-original, .sentence-translated { display: block; }
+.sentence-pair + .sentence-pair { margin-top: 12px; }
+.sentence-translated { margin-top: 5px; padding-left: 10px; border-left: 2px solid var(--accent); color: var(--accent); font-weight: 400; }
+.bilingual-preview :is(h1,h2,h3,h4,h5,h6) .sentence-translated { font-size: 0.8em; line-height: 1.6; }
+
+.reader-review { padding-bottom: 4px; border-bottom: 1px solid var(--line); }
+.reader-review details { margin: 8px 16px; font-size: 12px; }
+.reader-review summary { cursor: pointer; padding: 6px 0; }
+.reader-review details > input { box-sizing: border-box; width: 100%; padding: 8px; margin: 8px 0; border: 1px solid var(--line); border-radius: 6px; color: var(--text); background: var(--surface); }
+.reader-comparisons { max-height: 200px; overflow: auto; }
+.reader-comparisons label { display: flex; align-items: flex-start; gap: 8px; padding: 6px 0; cursor: pointer; }
+.reader-comparisons input { flex-shrink: 0; }
+.reader-comparisons small { display: block; color: var(--muted); overflow-wrap: anywhere; margin-top: 3px; }

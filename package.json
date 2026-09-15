@@ -1,0 +1,45 @@
+{
+  "name": "skill-manager",
+  "version": "0.4.7",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tauri dev",
+    "dev:web": "vite --host 127.0.0.1 --port 1420",
+    "build:web": "tsc --noEmit && vite build",
+    "build": "tauri build --bundles app -- --locked",
+    "test": "pnpm test:web && pnpm test:rust",
+    "tauri": "tauri",
+    "test:web": "node --experimental-strip-types --test tests/*.test.mjs",
+    "test:rust": "cargo test --manifest-path src-tauri/Cargo.toml --no-default-features --locked",
+    "build:dmg": "tauri build --bundles dmg -- --locked"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "2.11.1",
+    "@tauri-apps/plugin-dialog": "2.7.3",
+    "lucide-react": "0.542.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
+    "remark-parse": "11.0.0",
+    "unified": "11.0.5"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "2.8.1",
+    "@types/mdast": "4.0.4",
+    "@types/react": "18.3.23",
+    "@types/react-dom": "18.3.7",
+    "typescript": "5.9.2",
+    "vite": "7.3.0"
+  },
+  "packageManager": "pnpm@10.12.3",
+  "description": "Local desktop manager for AI coding skills and rules, with reversible project toggles and global skill management",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MicroSharpAnt/Skill-Manager.git"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}

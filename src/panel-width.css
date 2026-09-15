@@ -1,0 +1,30 @@
+.panel-width-handle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 8px;
+  z-index: 6;
+  cursor: ew-resize;
+  touch-action: none;
+  user-select: none;
+  border-radius: 5px;
+}
+.panel-width-handle::after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: calc(50% - 22px);
+  width: 3px;
+  height: 44px;
+  border-radius: 3px;
+  background: var(--line);
+}
+.panel-width-handle:hover,
+.panel-width-handle:focus-visible,
+.panel-width-handle.dragging { background: var(--accent-soft); outline: none; }
+.panel-width-handle:hover::after,
+.panel-width-handle:focus-visible::after,
+.panel-width-handle.dragging::after { background: var(--accent); }
+.detail-panel:has(> .panel-width-handle.dragging),
+.modal:has(> .panel-width-handle.dragging) { user-select: none; }

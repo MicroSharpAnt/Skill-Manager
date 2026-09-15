@@ -1,0 +1,34 @@
+.skill-context-menu {
+  position: fixed;
+  z-index: 50;
+  width: 280px;
+  max-width: calc(100vw - 16px);
+  max-height: calc(100vh - 16px);
+  overflow: auto;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--text);
+  box-shadow: 0 8px 28px var(--shadow-color);
+  font-size: 12px;
+}
+.context-title { padding: 4px 6px 10px; font-weight: 600; overflow-wrap: anywhere; }
+.context-action {
+  display: flex; align-items: center; gap: 9px;
+  width: 100%; padding: 9px 8px; border-radius: 5px;
+  color: var(--text); text-align: left;
+}
+.context-action:hover, .context-action:focus-visible { background: var(--accent-soft); }
+.context-action > span:not(.skill-group-dot) { flex: 1; overflow-wrap: anywhere; }
+.context-action[aria-pressed="true"] { background: var(--subtle); }
+.context-section { margin-top: 6px; padding: 10px 6px 4px; border-top: 1px solid var(--line); }
+.context-section > label, .context-section > p { display: block; margin: 0 0 8px; color: var(--muted); }
+.context-rename { display: flex; gap: 6px; }
+.context-rename input {
+  min-width: 0; width: 100%; padding: 7px 8px;
+  border: 1px solid var(--line); border-radius: 4px;
+  background: var(--paper); color: var(--text);
+}
+.context-rename button { flex-shrink: 0; }
+.context-destinations { max-height: 240px; overflow: auto; }

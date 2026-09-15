@@ -1,0 +1,19 @@
+.preset-panel { margin: 14px 0; }
+.preset-bar { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; font-size: 12px; }
+.preset-bar > select { min-width: 155px; max-width: 260px; }
+.preset-bar > small { color: var(--muted); }
+.preset-fields { border: 0; padding: 0; margin: 0; min-width: 0; }
+.preset-default, .preset-clients { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin: 12px 0; font-size: 13px; }
+.preset-clients label { display: flex; align-items: center; gap: 5px; }
+.preset-editor-columns { display: grid; grid-template-columns: 1fr 1.3fr; gap: 20px; }
+.preset-editor-columns section { min-width: 0; }
+.preset-editor-columns h3 { font-size: 14px; margin: 12px 0; }
+.preset-editor-columns section > input { width: 100%; margin-bottom: 8px; }
+.preset-options { max-height: 330px; overflow: auto; }
+.preset-rule { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--line); font-size: 12px; }
+.preset-rule > span { min-width: 0; overflow-wrap: anywhere; }
+.preset-rule small { display: block; color: var(--muted); margin-top: 3px; }
+.preset-rule select { flex-shrink: 0; max-width: 125px; }
+.preset-error, .preset-errors { color: var(--danger); font-size: 13px; }
+.preset-errors { max-height: 160px; overflow: auto; }
+@media (max-width: 700px) { .preset-editor-columns { grid-template-columns: 1fr; } }

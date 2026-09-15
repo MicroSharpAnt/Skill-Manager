@@ -1,0 +1,7 @@
+.global-matrix .matrix td .skill-download-label { font-family: inherit; margin-top: 3px; }
+.skill-download-details { margin-top: 12px; font-size: 12px; line-height: 1.7; color: var(--muted); }
+.skill-download-details > small, .skill-download-details > code { display: block; margin-top: 4px; overflow-wrap: anywhere; }
+.skill-source-link a { display: inline-flex; align-items: center; gap: 3px; color: var(--accent); text-decoration: underline; overflow-wrap: anywhere; }
+.skill-source-link svg { flex-shrink: 0; }
+.skill-source-link a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.skill-source-error { display: block; color: var(--danger); font-size: 12px; }

@@ -1,0 +1,29 @@
+# Dependencies and build output
+node_modules/
+.pnpm-store/
+dist/
+target/
+src-tauri/gen/
+.DS_Store
+*.log
+
+# Local data, snapshots and recovery records
+artifacts/
+public/preview.json
+docs/download-sources-*.md
+docs/VALIDATION.md
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+llm.json
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.mobileprovision
+.idea/
+.vscode/

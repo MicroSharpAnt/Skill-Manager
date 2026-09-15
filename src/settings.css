@@ -1,0 +1,25 @@
+.settings-page { min-width: 0; outline: none; scroll-margin-top: 55px; }
+.settings-content { display: grid; gap: 24px; }
+.settings-page h3 { margin: 0; font-size: 14px; }
+.settings-description { font-size: 12px; color: var(--muted); margin: 8px 0 14px; }
+.settings-page .theme-settings,
+.settings-page .translation-style-settings,
+.settings-page .llm-settings {
+  min-width: 0; margin: 0; padding: 24px;
+  background: var(--paper); border: 1px solid var(--line); border-radius: 9px;
+  scroll-margin-top: 55px;
+}
+.settings-page .theme-options { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.settings-page .theme-option-name { color: var(--text); }
+.settings-page .theme-option small { color: var(--muted); }
+.settings-page .llm-settings > p { font-size: 12px; }
+.settings-page .llm-settings > label,
+.settings-page .llm-settings > small { max-width: 760px; }
+.settings-page .llm-settings > button,
+.settings-page .llm-settings > select { justify-self: start; }
+@media (max-width: 760px) {
+  .settings-page .theme-options { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .settings-page .theme-settings,
+  .settings-page .translation-style-settings,
+  .settings-page .llm-settings { padding: 18px; }
+}
