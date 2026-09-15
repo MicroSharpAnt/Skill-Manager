@@ -2,6 +2,7 @@
 name = "skill-manager"
 version = "0.4.7"
 edition = "2021"
+license = "MIT"
 description = "Global and reversible project Skill and Rule manager"
 repository = "https://github.com/MicroSharpAnt/Skill-Manager"
 
